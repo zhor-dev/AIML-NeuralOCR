@@ -1,3 +1,5 @@
+package BackPropagationLearning;
+
 public abstract class Neuron implements ActivationFunction {
 
     private double []inputs;

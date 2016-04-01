@@ -1,3 +1,6 @@
+import BackPropagationLearning.ActivationFunction;
+import BackPropagationLearning.ActivationFunctions;
+import BackPropagationLearning.BackPropagationNetwork;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -5,18 +8,6 @@ import java.io.IOException;
 public class TrainNetwork {
 
     private BackPropagationNetwork network;
-    /*public static final double [][]dOutput = {
-            {0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5},
-            {-0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5},
-            {-0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5},
-            {-0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5},
-            {-0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5},
-            {-0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5},
-            {-0.5, -0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5},
-            {-0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5},
-            {-0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5},
-            {-0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, -0.5, 0.5}
-    };*/
 
     public static final double [][]dOutput = {
             {1, 0, 0, 0, 0, 0, 0, 0, 0, 0},

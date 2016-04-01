@@ -1,3 +1,7 @@
+import BackPropagationLearning.ActivationFunction;
+import BackPropagationLearning.ActivationFunctions;
+import BackPropagationLearning.BackPropagationNetwork;
+import BackPropagationLearning.Network;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
